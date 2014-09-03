@@ -1,12 +1,15 @@
-Sinatra Sequel Extension
-========================
+Sequel Sinatra
+==============
+Sequel Sinatra is a rebranded fork of [rtomayko's Sinatra Sequel extension](https://github.com/rtomayko/sinatra-sequel), which has apparently not been maintained since early 2013. This fork was
+adopted for incorporation into my other project, [Canto](https://github.com/danascheider/canto).
+Versioning starts at 0.9.0, the version of sinatra-sequel at the time of forking.
 
 Extends [Sinatra](http://www.sinatrarb.com/) with a variety of extension methods
 for dealing with a SQL database using the [Sequel ORM](http://sequel.rubyforge.org/).
 
-Install the `sinatra-sequel` gem along with one of the database adapters:
+Install the `sequel-sinatra` gem along with one of the database adapters:
 
-    sudo gem install sequel sinatra-sequel
+    sudo gem install sequel sequel-sinatra
     sudo gem install sqlite3
     sudo gem install mysql
     sudo gem install postgres
