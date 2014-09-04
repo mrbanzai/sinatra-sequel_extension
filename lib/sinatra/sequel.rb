@@ -69,7 +69,10 @@ module Sinatra
       end
     end
 
-    # Adds necessary settings to given +app+ using the extension:
+    # Adds necessary settings to given +app+ using the extension
+    # Returns +true+ unless there are problems registering the extension.
+    #
+    # The configurations made to the +app+ are:
     # * The database URL is set to be the SQLite database (+*.db+) whose name corresponds to
     #   the current Rack environment, which is presumed to be stored in the app's root
     #   directory, for example, +./development.db+. This behavior can be overwritten by
@@ -77,8 +80,6 @@ module Sinatra
     # * The name of the migrations table is set to +migrations+.
     # * The migrations log is directed to +STDOUT+.
     # * The +SequelHelper+ module is added to the app's helpers.
-    #
-    # Returns +true+.
     # 
     # If there is a problem registering the extension,please (file an issue report)[https://github.com/danascheider/sinatra-sequel_extension/issues]
     # or make a pull request.
