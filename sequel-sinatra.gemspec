@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'sinatra',    '>= 0.9.4'
   s.add_dependency 'sequel',     '>= 3.2.0'
   s.add_development_dependency 'bacon'
+  s.add_development_dependency 'rspec', '>= 3.0'
 
   s.has_rdoc = true
   s.homepage = "http://github.com/danascheider/sequel-sinatra"
