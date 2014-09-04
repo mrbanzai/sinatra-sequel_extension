@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 
-  s.name = 'sequel-sinatra'
+  s.name = 'sinatra-sequel_extension'
   s.version = '0.9.0'
   s.date = '2009-08-08'
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
     README.md
     Rakefile
     lib/sinatra/sequel.rb
-    sequel-sinatra.gemspec
+    sinatra-sequel_extension.gemspec
     spec/sequel_sinatra_spec.rb
   ]
   # = MANIFEST =
@@ -36,8 +36,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov', '>= 0.9'
 
   s.has_rdoc = true
-  s.homepage = "http://github.com/danascheider/sequel-sinatra"
-  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Sinatra::Sequel"]
+  s.homepage = "http://github.com/danascheider/sinatra-sequel_extension"
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Sinatra::SequelExtension"]
   s.require_paths = %w[lib]
   s.rubyforge_project = 'wink'
   s.rubygems_version = '1.1.1'
