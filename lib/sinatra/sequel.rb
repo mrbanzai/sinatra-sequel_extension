@@ -77,6 +77,12 @@ module Sinatra
     # * The name of the migrations table is set to +migrations+.
     # * The migrations log is directed to +STDOUT+.
     # * The +SequelHelper+ module is added to the app's helpers.
+    #
+    # The +app+ parameter is the app registering the extension. This occurs automatically
+    # when the extension is included in your project and does not need configuration.
+    #
+    # This method returns +true+. It is called automatically, so you should not
+    # call it explicitly. 
     
     def self.registered(app)
       app.set :database_url, lambda { ENV['DATABASE_URL'] || "sqlite://#{environment}.db" }
