@@ -61,11 +61,15 @@ module Sinatra
 
   protected
 
+    # Creates a table in the +database+ called +migrations_table_name+ containing
+    # columns +id+ (primary key), +name+ (string), and +run_at+ (timestamp). 
+    # Creates the table only if the table does not already exist.
+
     def create_migrations_table
       database.create_table? migrations_table_name do
         primary_key :id
         String :name, :null => false, :index => true
-        timestamp :ran_at
+        timestamp :run_at
       end
     end
 
