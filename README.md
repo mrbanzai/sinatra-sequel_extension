@@ -70,6 +70,8 @@ the following code in about anywhere and it'll work just fine:
       @foo.delete
     end
 
+Do note that you must require `'sinatra/sequel'`, not the other way around.
+
 ### Sequel Reference Material
 
   * The [Sequel README](http://sequel.rubyforge.org/rdoc/files/README_rdoc.html)
