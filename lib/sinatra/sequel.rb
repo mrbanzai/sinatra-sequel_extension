@@ -34,6 +34,10 @@ module Sinatra
   end
 
   module SequelExtension
+
+    # Sets +:database_url+ to the given +url+ and +@database+ to +nil+.
+    # Returns the database. 
+    
     def database=(url)
       @database = nil
       set :database_url, url
