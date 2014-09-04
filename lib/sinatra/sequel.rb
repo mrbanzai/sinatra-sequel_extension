@@ -69,6 +69,15 @@ module Sinatra
       end
     end
 
+    # Adds necessary settings to app using the extension:
+    # * The database URL is set to be the SQLite database (+*.db+) whose name corresponds to
+    #   the current Rack environment, which is presumed to be stored in the app's root
+    #   directory, for example, +./development.db+. This behavior can be overwritten by
+    #   setting the environment variable +DATABASE_URL+.
+    # * The name of the migrations table is set to +migrations+.
+    # * The migrations log is directed to +STDOUT+.
+    # * The +SequelHelper+ module is added to the app's helpers.
+    
     def self.registered(app)
       app.set :database_url, lambda { ENV['DATABASE_URL'] || "sqlite://#{environment}.db" }
       app.set :migrations_table_name, :migrations
