@@ -47,7 +47,7 @@ module Sinatra
     # Sets +@database+ to the database at the existing +database_url+ unless
     # the variable is already defined. 
     # Returns +@database+.
-    
+
     def database
       @database ||=
         Sequel.connect(database_url, :encoding => 'utf-8')
@@ -59,7 +59,7 @@ module Sinatra
       migrations_log.puts "Running migration: #{name}"
       database.transaction do
         yield database
-        database[migrations_table_name] << { :name => name, :ran_at => Time.now }
+        database[migrations_table_name] << { :name => name, :run_at => Time.now }
       end
     end
 
