@@ -53,6 +53,17 @@ module Sinatra
         Sequel.connect(database_url, :encoding => 'utf-8')
     end
 
+    # Creates a migration with the given +name+. Returns if a migration by
+    # the given +name+ already exists. Creates a migrations table if it doesn't
+    # exist already. Logs migrations in the log (by default +STDOUT+). Yields +&block+
+    # with the +database+ as an argument inside a database transaction. Enters
+    # the migration into the migrations table.
+    # 
+    # The +&block+ parameter is the +Sequel.migration+ block containing the changes
+    # to be made to the database. 
+    #
+    # Returns +true+ unless there is an error.
+    
     def migration(name, &block)
       create_migrations_table
       return if database[migrations_table_name].filter(:name => name).count > 0
