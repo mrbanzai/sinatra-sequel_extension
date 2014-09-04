@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler', '>= 1.6'
   s.add_development_dependency 'sqlite3', '>= 1.3'
   s.add_development_dependency 'coveralls', '>= 0.7.1'
+  s.add_development_dependency 'simplecov', '>= 0.9'
 
   s.has_rdoc = true
   s.homepage = "http://github.com/danascheider/sequel-sinatra"

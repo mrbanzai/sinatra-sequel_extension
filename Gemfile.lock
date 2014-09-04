@@ -64,4 +64,5 @@ DEPENDENCIES
   rake (>= 10.3)
   rspec (>= 3.0)
   sequel-sinatra!
+  simplecov (>= 0.9)
   sqlite3 (>= 1.3)
