@@ -1,11 +1,9 @@
 require 'rake/clean'
+require 'rspec/core/rake_task'
 
 task :default => :spec
 
-desc 'Run specs'
-task :spec do
-  sh 'bacon -a'
-end
+RSpec::Core::RakeTask.new
 
 # PACKAGING ============================================================
 
