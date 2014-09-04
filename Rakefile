@@ -9,7 +9,7 @@ RSpec::Core::RakeTask.new
 
 if defined?(Gem)
   # Load the gemspec using the same limitations as github
-  $spec = eval(File.read('sequel-sinatra.gemspec'))
+  $spec = eval(File.read('sinatra-sequel_extension.gemspec'))
 
   def package(ext='')
     "pkg/#{$spec.name}-#{$spec.version}" + ext
