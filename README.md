@@ -1,4 +1,4 @@
-Sequel Sinatra [![Build Status](https://travis-ci.org/danascheider/sequel-sinatra.svg?branch=master)](https://travis-ci.org/danascheider/sequel-sinatra)
+Sequel Sinatra [![Build Status](https://travis-ci.org/danascheider/sequel-sinatra.svg?branch=master)](https://travis-ci.org/danascheider/sequel-sinatra) [![Code Climate](https://codeclimate.com/github/danascheider/sequel-sinatra/badges/gpa.svg)](https://codeclimate.com/github/danascheider/sequel-sinatra)
 ==============
 Sequel Sinatra is a rebranded fork of [rtomayko's Sinatra Sequel extension](https://github.com/rtomayko/sinatra-sequel), which has apparently not been maintained since early 2013. This fork was
 adopted for incorporation into my other project, [Canto](https://github.com/danascheider/canto).
