@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
     README.md
     Rakefile
     lib/sinatra/sequel.rb
-    sinatra-sequel.gemspec
-    spec/spec_sinatra_sequel.rb
+    sequel-sinatra.gemspec
+    spec/sequel_sinatra_spec.rb
   ]
   # = MANIFEST =
 
@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '>= 10.3'
   s.add_development_dependency 'bundler', '>= 1.6'
   s.add_development_dependency 'sqlite3', '>= 1.3'
+  s.add_development_dependency 'coveralls', '>= 0.7.1'
 
   s.has_rdoc = true
   s.homepage = "http://github.com/danascheider/sequel-sinatra"
