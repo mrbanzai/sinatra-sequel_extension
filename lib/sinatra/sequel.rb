@@ -55,7 +55,7 @@ module Sinatra
 
     # Creates a migration with the given +name+. Returns if a migration by
     # the given +name+ already exists. Creates a migrations table if it doesn't
-    # exist already. Logs migrations in the log (by default +STDOUT+). Yields +&block+
+    # exist already. Logs migrations in the log (by default +STDOUT+). Yields given +&block+
     # with the +database+ as an argument inside a database transaction. Enters
     # the migration into the migrations table.
     # 
