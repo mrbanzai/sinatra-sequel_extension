@@ -81,7 +81,7 @@ module Sinatra
     # The +app+ parameter is the app registering the extension. This occurs automatically
     # when the extension is included in your project and does not need configuration.
     #
-    # Returns +true+ unless there is a problem registering the extension.
+    # Return value is +true+ unless there is a problem registering the extension.
     # If this occurs, please (file an issue report)[https://github.com/danascheider/sinatra-sequel_extension/issues]
     # or make a pull request.
 
