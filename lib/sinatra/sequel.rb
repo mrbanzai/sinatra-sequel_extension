@@ -37,13 +37,17 @@ module Sinatra
 
     # Sets +:database_url+ to the given +url+ and +@database+ to +nil+.
     # Returns the database. 
-    
+
     def database=(url)
       @database = nil
       set :database_url, url
       database
     end
 
+    # Sets +@database+ to the database at the existing +database_url+ unless
+    # the variable is already defined. 
+    # Returns +@database+.
+    
     def database
       @database ||=
         Sequel.connect(database_url, :encoding => 'utf-8')
