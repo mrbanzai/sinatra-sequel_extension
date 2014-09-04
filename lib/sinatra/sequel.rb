@@ -77,5 +77,8 @@ module Sinatra
     end
   end
 
+  # Registering the extension allows its methods to be incorporated into
+  # your Sinatra project as if they were Sinatra methods using nothing more than
+  # the +require+ statement in your main app file. 
   register SequelExtension
 end
