@@ -11,7 +11,7 @@ end
 
 if defined?(Gem)
   # Load the gemspec using the same limitations as github
-  $spec = eval(File.read('sinatra-sequel.gemspec'))
+  $spec = eval(File.read('sequel-sinatra.gemspec'))
 
   def package(ext='')
     "pkg/#{$spec.name}-#{$spec.version}" + ext
