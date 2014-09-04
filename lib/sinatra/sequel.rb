@@ -81,6 +81,9 @@ module Sinatra
     # * The migrations log is directed to +STDOUT+.
     # * The +SequelHelper+ module is added to the app's helpers.
     # 
+    # This method will be called automatically when you +require+ the Sinatra::SequelExtension
+    # module in your main app file; it should not be called explicitly.
+    #
     # If there is a problem registering the extension,please (file an issue report)[https://github.com/danascheider/sinatra-sequel_extension/issues]
     # or make a pull request.
 
