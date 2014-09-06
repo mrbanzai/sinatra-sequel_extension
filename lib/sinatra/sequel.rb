@@ -74,6 +74,32 @@ module Sinatra
       end
     end
 
+    # For each adapter, define +#<adapter>?+ method checking whether the 
+    # database stored in +@database+ matches the type of the adapter. For example,
+    # +#sqlite?+ method checks whether +@database.database_type+ is +sqlite+. 
+    #
+    # The methods defined in this block are:
+    # * +#ado?+
+    # * +#amalgalite?+
+    # * +#cubrid?+
+    # * +#db2?+
+    # * +#dbi?+
+    # * +#do?+
+    # * +#firebird?+
+    # * +#ibmdb?+
+    # * +#informix?+
+    # * +#jdbc?+
+    # * +#mock?+
+    # * +#mysql?+
+    # * +#mysql2?+
+    # * +#odbc?+
+    # * +#openbase?+
+    # * +#oracle?+
+    # * +#sqlanywhere?+
+    # * +#sqlite?+
+    # * +#swift?+
+    # * +#tinytds?+
+    
     Sequel::Database::ADAPTERS.each do |adapter|
       define_method("#{adapter}?") { @database.database_type == adapter }
     end
