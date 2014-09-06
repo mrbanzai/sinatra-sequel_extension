@@ -2,4 +2,5 @@ test.db
 /pkg
 *.swp
 coverage/*
+.bundle
 *.gem
