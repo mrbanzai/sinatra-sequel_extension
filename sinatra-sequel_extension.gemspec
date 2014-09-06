@@ -24,16 +24,17 @@ Gem::Specification.new do |s|
   # = MANIFEST =
 
   s.test_files = s.files.select {|path| path =~ /^spec\/.*.rb/ }
+  s.licenses = 'MIT'
 
   s.extra_rdoc_files = %w[README.md LICENSE]
-  s.add_dependency 'sinatra',    '>= 0.9.4'
-  s.add_dependency 'sequel',     '>= 3.2.0'
-  s.add_development_dependency 'rspec', '>= 3.0'
-  s.add_development_dependency 'rake', '>= 10.3'
-  s.add_development_dependency 'bundler', '>= 1.6'
-  s.add_development_dependency 'sqlite3', '>= 1.3'
-  s.add_development_dependency 'coveralls', '>= 0.7.1'
-  s.add_development_dependency 'simplecov', '>= 0.9'
+  s.add_dependency 'sinatra',    '~> 0.9', '>= 0.9.4'
+  s.add_dependency 'sequel',     '~> 3.2'
+  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'rake', '~> 10.3'
+  s.add_development_dependency 'bundler', '~> 1.6'
+  s.add_development_dependency 'sqlite3', '~> 1.3'
+  s.add_development_dependency 'coveralls', '~> 0.7', '>= 0.7.1'
+  s.add_development_dependency 'simplecov', '~> 0.9'
 
   s.has_rdoc = true
   s.homepage = "http://github.com/danascheider/sinatra-sequel_extension"
