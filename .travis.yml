@@ -7,4 +7,5 @@ notifications:
   email:
   on_failure: change
 gemfiles:
+  - Gemfile
   - gemfiles/Gemfile.sinatra-1.0
