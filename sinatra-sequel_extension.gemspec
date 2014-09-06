@@ -18,13 +18,14 @@ Gem::Specification.new do |s|
     README.md
     Rakefile
     gemfiles/Gemfile.sequel-4.0
-    gemfiles/Gemfile.sequel-4.14
+    gemfiles/Gemfile.sequel-4.12
     gemfiles/Gemfile.sinatra-1.0
     gemfiles/Gemfile.sinatra-1.4
     lib/sinatra/sequel.rb
     sinatra-sequel_extension.gemspec
     spec/sequel_sinatra_spec.rb
     spec/spec_helper.rb
+    Appraisals
   ]
   # = MANIFEST =
 
@@ -40,6 +41,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sqlite3', '~> 1.3'
   s.add_development_dependency 'coveralls', '~> 0.7'
   s.add_development_dependency 'simplecov', '~> 0.9'
+  s.add_development_dependency 'appraisal', '~> 1.0'
 
   s.has_rdoc = true
   s.homepage = "http://github.com/danascheider/sinatra-sequel_extension"

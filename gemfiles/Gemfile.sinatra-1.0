@@ -1,4 +1,0 @@
-source :rubygems
-gemspec :path => '../'
-
-gem 'sinatra', '1.0'

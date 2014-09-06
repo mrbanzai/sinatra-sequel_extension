@@ -1,4 +1,0 @@
-source :rubygems
-gemspec :path => '../'
-
-gem 'sequel', '4.0'

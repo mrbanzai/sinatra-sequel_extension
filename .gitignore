@@ -1,5 +1,6 @@
 vendor
 test.db
+/gemfiles/*.lock
 /pkg
 *.swp
 coverage/*
