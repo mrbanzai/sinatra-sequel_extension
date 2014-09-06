@@ -23,8 +23,8 @@ require 'sequel'
 #     gem 'sequel-sinatra_extension', '>= 0.9'
 # Install the gems using +bundle install+.
 #
-# Sinatra::SequelExtension can work with MySQL, PostgreSQL, and SQLite3 adapters.
-# You will need to include the appropriate database gem in your Gemfile as well.
+# Sinatra::SequelExtension can work with MySQL, PostgreSQL, and SQLite3 adapters,
+# as well as a number of others[https://github.com/jeremyevans/sequel/tree/master/lib/sequel/adapters].
 
 module Sinatra
   module SequelHelper
@@ -99,7 +99,7 @@ module Sinatra
     # * +#sqlite?+
     # * +#swift?+
     # * +#tinytds?+
-    
+
     Sequel::Database::ADAPTERS.each do |adapter|
       define_method("#{adapter}?") { @database.database_type == adapter }
     end
