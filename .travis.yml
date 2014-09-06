@@ -6,3 +6,5 @@ rvm:
 notifications:
   email:
   on_failure: change
+gemfiles:
+  - gemfiles/Gemfile.sinatra-1.0
