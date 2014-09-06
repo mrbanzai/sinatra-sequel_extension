@@ -8,12 +8,12 @@ Versioning starts at 0.9.0, the version of sinatra-sequel at the time of forking
 Extends [Sinatra](http://www.sinatrarb.com/) with a variety of extension methods
 for dealing with a SQL database using the [Sequel ORM](http://sequel.rubyforge.org/).
 
+As a courtesy to the gem's original author, `sinatra-sequel_extension` is not yet
+published on https://rubygems.org pending the addition of substantial differentiating 
+features. Instead, you will need to use the following code to install
 Install the `sinatra-sequel_extension` gem along with one of the database adapters:
 
-    sudo gem install sequel sinatra-sequel_extension
-    sudo gem install sqlite3
-    sudo gem install mysql
-    sudo gem install postgres
+    sudo gem install sinatra-sequel_extension --source https://github.com/danascheider/sinatra-sequel_extension
 
 I like to split database configuration and migrations out into a separate
 `database.rb` file and then require it from the main app file, but you can plop
