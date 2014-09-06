@@ -8,6 +8,7 @@ gemfile:
   - gemfiles/Gemfile.sinatra-1.0
   - gemfiles/Gemfile.sinatra-1.4
   - gemfiles/Gemfile.sequel-4.0
+  - gemfiles/Gemfiles.sequel-4.14
 notifications:
   email:
   on_failure: change

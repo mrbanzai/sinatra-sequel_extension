@@ -17,9 +17,14 @@ Gem::Specification.new do |s|
     LICENSE
     README.md
     Rakefile
+    gemfiles/Gemfile.sequel-4.0
+    gemfiles/Gemfile.sequel-4.14
+    gemfiles/Gemfile.sinatra-1.0
+    gemfiles/Gemfile.sinatra-1.4
     lib/sinatra/sequel.rb
     sinatra-sequel_extension.gemspec
     spec/sequel_sinatra_spec.rb
+    spec/spec_helper.rb
   ]
   # = MANIFEST =
 
