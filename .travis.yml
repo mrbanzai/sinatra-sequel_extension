@@ -3,9 +3,10 @@ rvm:
   - "1.9.3"
   - "2.0.0"
   - "2.1.2"
+gemfile:
+  - Gemfile 
+  - gemfiles/Gemfile.sinatra-1.0
+  - gemfiles/Gemfile.sinatra-1.4
 notifications:
   email:
   on_failure: change
-gemfiles:
-  - Gemfile
-  - gemfiles/Gemfile.sinatra-1.0
