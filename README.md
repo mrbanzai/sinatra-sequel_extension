@@ -15,6 +15,12 @@ Install the `sinatra-sequel_extension` gem along with one of the database adapte
 
     sudo gem install sinatra-sequel_extension --source https://github.com/danascheider/sinatra-sequel_extension
 
+If you are using Bundler, then add the source to your Gemfile:
+    gem 'sinatra-sequel_extension', :git => 'git://github.com/danascheider/sinatra-sequel_extension.git'
+
+Once listed in your Gemfile, this gem can be installed like other gems using 
+`bundle install`. Be aware that `gem list` will not display gems added in this manner.
+
 I like to split database configuration and migrations out into a separate
 `database.rb` file and then require it from the main app file, but you can plop
 the following code in about anywhere and it'll work just fine:
