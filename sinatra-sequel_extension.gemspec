@@ -17,10 +17,14 @@ Gem::Specification.new do |s|
     LICENSE
     README.md
     Rakefile
-    gemfiles/Gemfile.sequel-4.0
-    gemfiles/Gemfile.sequel-4.12
-    gemfiles/Gemfile.sinatra-1.0
-    gemfiles/Gemfile.sinatra-1.4
+    gemfiles/sequel_3.2.gemfile
+    gemfiles/sequel_4.0.gemfile
+    gemfiles/sequel_4.14.gemfile
+    gemfiles/sinatra_0.9.4.gemfile
+    gemfiles/sinatra_1.1.gemfile 
+    gemfiles/sinatra_1.2.gemfile 
+    gemfiles/sinatra_1.3.gemfile 
+    gemfiles/sinatra_1.4.gemfile
     lib/sinatra/sequel.rb
     sinatra-sequel_extension.gemspec
     spec/sequel_sinatra_spec.rb
