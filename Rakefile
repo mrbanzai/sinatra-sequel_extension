@@ -2,6 +2,7 @@ require 'rake/clean'
 require 'bundler/setup'
 require 'rspec/core/rake_task'
 require 'fileutils'
+require 'colorize'
 
 task :default => 'appraisal:run'
 RSpec::Core::RakeTask.new
@@ -15,6 +16,24 @@ namespace :appraisal do
   desc 'Run RSpec suite across multiple dependency versions'
   task :run => :install do 
     sh 'appraisal rspec'
+  end
+
+  desc 'Remove generated gemfiles'
+  task :cleanup do 
+    Dir.glob('./gemfiles/*').each do |file|
+      FileUtils.rm(file)
+      puts "Deleted file #{file}...".yellow
+    end
+    puts "Complete!".green
+  end
+
+  desc 'Remove *.lock files of generated gemfiles'
+  task :refresh do 
+    Dir.glob('./gemfiles/*.lock').each do |file| 
+      FileUtils.rm(file)
+      puts "Deleted file #{file}...".yellow
+    end
+    puts "Complete!".green
   end
 end
 
