@@ -1,10 +1,22 @@
 require 'rake/clean'
 require 'bundler/setup'
 require 'rspec/core/rake_task'
+require 'fileutils'
 
-task :default => :spec
-
+task :default => 'appraisal:run'
 RSpec::Core::RakeTask.new
+
+namespace :appraisal do 
+  desc 'Install dependencies for the Appraisal gem'
+  task :install do 
+    sh 'appraisal install'
+  end
+
+  desc 'Run RSpec suite across multiple dependency versions'
+  task :run => :install do 
+    sh 'appraisal rspec'
+  end
+end
 
 # PACKAGING ============================================================
 
@@ -44,7 +56,7 @@ end
 
 
 # rebuild the gemspec manifest and update timestamps.
-task "sinatra-sequel.gemspec" => FileList['{lib,spec}/**','Rakefile','COPYING','README.md'] do |f|
+task "sinatra-sequel.gemspec" => FileList['{lib,spec}/**','Rakefile','LICENSE','README.md'] do |f|
   # read spec file and split out manifest section
   spec = File.read(f.name)
   head, manifest, tail = spec.split("  # = MANIFEST =\n")
