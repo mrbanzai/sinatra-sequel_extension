@@ -81,16 +81,15 @@ the following code in about anywhere and it'll work just fine:
 
 ### Sequel Reference Material
 
-  * The [Sequel README](http://sequel.rubyforge.org/rdoc/files/README_rdoc.html)
+  * The [Sequel README](http://sequel.jeremyevans.net/rdoc/files/README_rdoc.html)
     and [CHEATSHEET](http://sequel.jeremyevans.net/rdoc/files/doc/cheat_sheet_rdoc.html)
     are quite useful.
 
   * Migrations are a light facade over Sequel's
-    [Schema module](http://sequel.rubyforge.org/rdoc/files/doc/schema_rdoc.html).
-    Like, [create_table](http://sequel.rubyforge.org/rdoc/classes/Sequel/Schema/Generator.html)
-    and [alter_table](http://sequel.rubyforge.org/rdoc/classes/Sequel/Schema/AlterTableGenerator.html).
+    [Schema module](http://sequel.jeremyevans.net/rdoc/files/doc/migration_rdoc.html),
+    like [create_table and alter_table](hhttp://sequel.jeremyevans.net/rdoc/files/doc/schema_modification_rdoc.html).
 
-  * The best reference on Sequel Models is [the README](http://sequel.rubyforge.org/rdoc/files/README_rdoc.html)
-    and the [Associations](http://sequel.rubyforge.org/rdoc/files/doc/advanced_associations_rdoc.html) doc.
+  * The best reference on Sequel Models is [the README](http://sequel.jeremyevans.net/rdoc/files/README_rdoc.html)
+    and the [Associations](http://sequel.jeremyevans.net/rdoc/files/doc/advanced_associations_rdoc.html) doc.
     You might find this post on [many_to_many / one_to_one](http://steamcode.blogspot.com/2009/03/sequel-models-manytoone-onetomany.html)
     useful.
