@@ -82,7 +82,7 @@ the following code in about anywhere and it'll work just fine:
 ### Sequel Reference Material
 
   * The [Sequel README](http://sequel.rubyforge.org/rdoc/files/README_rdoc.html)
-    and [CHEATSHEET](http://sequel.rubyforge.org/rdoc/files/doc/cheat_sheet_rdoc.html)
+    and [CHEATSHEET](http://sequel.jeremyevans.net/rdoc/files/doc/cheat_sheet_rdoc.html)
     are quite useful.
 
   * Migrations are a light facade over Sequel's
