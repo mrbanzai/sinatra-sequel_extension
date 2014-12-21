@@ -1,6 +1,6 @@
 (1..4).each do |minor|
   appraise "sinatra-1.#{minor}" do 
-    gem 'sinatra', "1.#{minor}"
+    gem 'sinatra', "1.#{minor}.0"
   end
 end
 
@@ -16,6 +16,6 @@ appraise 'sequel-4.0' do
   gem 'sequel', '4.0'
 end
 
-appraise 'sequel-4.14' do 
-  gem 'sequel', '4.14'
+appraise 'sequel-4.17' do 
+  gem 'sequel', '4.17'
 end
