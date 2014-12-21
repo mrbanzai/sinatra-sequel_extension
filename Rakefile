@@ -20,7 +20,7 @@ namespace :appraisal do
 
   desc 'Remove generated gemfiles'
   task :cleanup do 
-    Dir.glob('./gemfiles/*').each do |file|
+    Dir.glob('./gemfiles/*.gemfile').each do |file|
       FileUtils.rm(file)
       puts "Deleted file #{file}...".yellow
     end
