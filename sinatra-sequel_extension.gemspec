@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 
   s.name = 'sinatra-sequel_extension'
-  s.version = '0.9.0'
-  s.date = '2009-08-08'
+  s.version = '0.9.1'
+  s.date = '2015-06-01'
 
   s.description = "Extends Sinatra with Sequel ORM config, migrations, and helpers"
   s.summary = "Sinatra/Sequel integration, forked from Ryan Tomayko's sinatra-sequel September 2014"
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sqlite3', '~> 1.3'
   s.add_development_dependency 'coveralls', '~> 0.7'
   s.add_development_dependency 'simplecov', '~> 0.9'
-  s.add_development_dependency 'appraisal', '~> 1.0'
+  s.add_development_dependency 'appraisal', '~> 2.0'
 
   s.has_rdoc = true
   s.homepage = "http://github.com/danascheider/sinatra-sequel_extension"
