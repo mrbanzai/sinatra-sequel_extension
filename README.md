@@ -1,7 +1,7 @@
 # Sinatra Sequel Extension 
 [![Build Status](https://travis-ci.org/mrbanzai/sinatra-sequel_extension.svg?branch=master)](https://travis-ci.org/mrbanzai/sinatra-sequel_extension) [![Code Climate](https://codeclimate.com/github/mrbanzai/sinatra-sequel_extension/badges/gpa.svg)](https://codeclimate.com/github/mrbanzai/sinatra-sequel_extension) [![Coverage Status](https://img.shields.io/coveralls/mrbanzai/sinatra-sequel_extension.svg)](https://coveralls.io/r/mrbanzai/sinatra-sequel_extension) [![Inline docs](http://inch-ci.org/github/mrbanzai/sinatra-sequel_extension.svg?branch=master)](http://inch-ci.org/github/mrbanzai/sinatra-sequel_extension) [![Dependency Status](https://gemnasium.com/mrbanzai/sinatra-sequel_extension.svg)](https://gemnasium.com/mrbanzai/sinatra-sequel_extension) 
 
-This is a fork of [danascheider's Sinatra Sequel extension](https://github.com/danascheider/sinatra-sequel_extension), which has apparently not been maintained since early 2013.
+This is a fork of [danascheider's Sinatra Sequel extension](https://github.com/danascheider/sinatra-sequel_extension).
 
 Extends [Sinatra](http://www.sinatrarb.com/) with a variety of extension methods
 for dealing with a SQL database using the [Sequel ORM](http://sequel.rubyforge.org/).
