@@ -1,9 +1,7 @@
 # Sinatra Sequel Extension 
-[![Build Status](https://travis-ci.org/danascheider/sinatra-sequel_extension.svg?branch=master)](https://travis-ci.org/danascheider/sinatra-sequel_extension) [![Code Climate](https://codeclimate.com/github/danascheider/sinatra-sequel_extension/badges/gpa.svg)](https://codeclimate.com/github/danascheider/sinatra-sequel_extension) [![Coverage Status](https://img.shields.io/coveralls/danascheider/sinatra-sequel_extension.svg)](https://coveralls.io/r/danascheider/sinatra-sequel_extension) [![Inline docs](http://inch-ci.org/github/danascheider/sinatra-sequel_extension.svg?branch=master)](http://inch-ci.org/github/danascheider/sinatra-sequel_extension) [![Dependency Status](https://gemnasium.com/danascheider/sinatra-sequel_extension.svg)](https://gemnasium.com/danascheider/sinatra-sequel_extension) 
+[![Build Status](https://travis-ci.org/mrbanzai/sinatra-sequel_extension.svg?branch=master)](https://travis-ci.org/mrbanzai/sinatra-sequel_extension) [![Code Climate](https://codeclimate.com/github/mrbanzai/sinatra-sequel_extension/badges/gpa.svg)](https://codeclimate.com/github/mrbanzai/sinatra-sequel_extension) [![Coverage Status](https://img.shields.io/coveralls/mrbanzai/sinatra-sequel_extension.svg)](https://coveralls.io/r/mrbanzai/sinatra-sequel_extension) [![Inline docs](http://inch-ci.org/github/mrbanzai/sinatra-sequel_extension.svg?branch=master)](http://inch-ci.org/github/mrbanzai/sinatra-sequel_extension) [![Dependency Status](https://gemnasium.com/mrbanzai/sinatra-sequel_extension.svg)](https://gemnasium.com/mrbanzai/sinatra-sequel_extension) 
 
-This is a fork of [rtomayko's Sinatra Sequel extension](https://github.com/rtomayko/sinatra-sequel), which has apparently not been maintained since early 2013. This fork was
-adopted for incorporation into my other project, [Canto](https://github.com/danascheider/canto).
-Versioning starts at 0.9.0, the version at the time of forking.
+This is a fork of [danascheider's Sinatra Sequel extension](https://github.com/danascheider/sinatra-sequel_extension), which has apparently not been maintained since early 2013.
 
 Extends [Sinatra](http://www.sinatrarb.com/) with a variety of extension methods
 for dealing with a SQL database using the [Sequel ORM](http://sequel.rubyforge.org/).
@@ -13,11 +11,11 @@ published on https://rubygems.org pending the addition of substantial differenti
 features. Instead, you will need to use the following code to install
 Install the `sinatra-sequel_extension` gem along with one of the database adapters:
 
-    sudo gem install sinatra-sequel_extension --source https://github.com/danascheider/sinatra-sequel_extension
+    sudo gem install sinatra-sequel_extension --source https://github.com/mrbanzai/sinatra-sequel_extension
 
 If you are using Bundler, then add the source to your Gemfile:
 
-    gem 'sinatra-sequel_extension', :git => 'git://github.com/danascheider/sinatra-sequel_extension.git'
+    gem 'sinatra-sequel_extension', :git => 'git://github.com/mrbanzai/sinatra-sequel_extension.git'
 
 Once listed in your Gemfile, this gem can be installed like other gems using 
 `bundle install`. Be aware that `gem list` will not display gems added in this manner.
